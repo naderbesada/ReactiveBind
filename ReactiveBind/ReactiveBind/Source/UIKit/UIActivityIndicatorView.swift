@@ -12,7 +12,7 @@ public extension Reactive where Base: UIActivityIndicatorView {
     
     /// ReactiveEvent of type Bool that corresponds to UIActivityIndicatorView's animate
     
-    public var text: ReactiveEvent<Bool> {
+    public var isAnimating: ReactiveEvent<Bool> {
         return ReactiveEvent<Bool>(
             onSet: { $0 ? self.base.startAnimating() : self.base.stopAnimating() }
         )
