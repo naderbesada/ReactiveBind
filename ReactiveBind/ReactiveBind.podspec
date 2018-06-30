@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ReactiveBind"
-  s.version      = "1.0"
+  s.version      = "1.0.0"
   s.summary      = "ReactiveBind bind helps make MVVM binding easier"
   s.homepage     = "https://github.com/naderbesada/ReactiveBind"
   s.license      = "MIT"

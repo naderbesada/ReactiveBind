@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ReactiveBindExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubm-ji-rUe">
+                                <rect key="frame" x="16" y="38" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Binded Text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mDj-2E-c9T">
+                                <rect key="frame" x="16" y="75" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wlI-oP-TQB">
+                                <rect key="frame" x="16" y="125" width="51" height="31"/>
+                            </switch>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Uo4-LY-1Ey">
+                                <rect key="frame" x="88" y="125" width="273" height="31"/>
+                            </slider>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="FSe-Pm-XNZ">
+                                <rect key="frame" x="177" y="188" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Uo4-LY-1Ey" firstAttribute="top" secondItem="mDj-2E-c9T" secondAttribute="bottom" constant="20" id="7nX-xR-9zc"/>
+                            <constraint firstItem="wlI-oP-TQB" firstAttribute="top" secondItem="mDj-2E-c9T" secondAttribute="bottom" constant="20" id="7ve-7b-Q9q"/>
+                            <constraint firstItem="mDj-2E-c9T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="L31-Q8-Qmh"/>
+                            <constraint firstItem="Uo4-LY-1Ey" firstAttribute="leading" secondItem="wlI-oP-TQB" secondAttribute="trailing" constant="25" id="QaZ-JW-ocJ"/>
+                            <constraint firstItem="mDj-2E-c9T" firstAttribute="top" secondItem="ubm-ji-rUe" secondAttribute="bottom" constant="16" id="TSY-Aa-sx8"/>
+                            <constraint firstItem="ubm-ji-rUe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="TXE-wQ-ZIW"/>
+                            <constraint firstItem="FSe-Pm-XNZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UPl-Ji-C4K"/>
+                            <constraint firstItem="FSe-Pm-XNZ" firstAttribute="top" secondItem="Uo4-LY-1Ey" secondAttribute="bottom" constant="33" id="Zn0-2w-Bta"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uo4-LY-1Ey" secondAttribute="trailing" constant="16" id="b5M-k0-l1Z"/>
+                            <constraint firstItem="Uo4-LY-1Ey" firstAttribute="leading" secondItem="wlI-oP-TQB" secondAttribute="trailing" constant="25" id="deb-Lo-knF"/>
+                            <constraint firstItem="wlI-oP-TQB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="dmm-Z3-uWL"/>
+                            <constraint firstItem="ubm-ji-rUe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="obs-i5-N4M"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mDj-2E-c9T" secondAttribute="trailing" constant="16" id="pPG-fC-7nQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ubm-ji-rUe" secondAttribute="trailing" constant="16" id="y9H-eJ-7bv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="reactiveActivityIndicator" destination="FSe-Pm-XNZ" id="5RN-tF-OJK"/>
+                        <outlet property="reactiveLabel" destination="ubm-ji-rUe" id="00z-yJ-11T"/>
+                        <outlet property="reactiveSlider" destination="Uo4-LY-1Ey" id="QpW-Dc-EDP"/>
+                        <outlet property="reactiveSwitch" destination="wlI-oP-TQB" id="jgx-MB-t4I"/>
+                        <outlet property="reactiveTextField" destination="mDj-2E-c9T" id="r7K-7p-eEx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>

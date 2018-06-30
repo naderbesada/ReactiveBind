@@ -1,0 +1,16 @@
+PODS:
+  - ReactiveBind (1.0.0)
+
+DEPENDENCIES:
+  - ReactiveBind
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ReactiveBind
+
+SPEC CHECKSUMS:
+  ReactiveBind: b5dd8095d5f23e6451a3e57752e191ab8312c2ad
+
+PODFILE CHECKSUM: 532ed65c0cca96dcef5252f2d034a9d7a42d1ad3
+
+COCOAPODS: 1.5.3

@@ -1,0 +1,6 @@
+framework module ReactiveBind {
+  umbrella header "ReactiveBind-umbrella.h"
+
+  export *
+  module * { export * }
+}
